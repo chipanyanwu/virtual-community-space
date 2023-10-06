@@ -31,7 +31,7 @@ const createEventsTable = async () => {
       title TEXT NOT NULL,
       datetime timestamp NOT NULL,
       image text NOT NULL,
-      location SERIAL REFERENCES locations(id)
+      location integer NOT NULL
     )
   `
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import EventsAPI from "../services/EventsAPI"
 import "../css/Event.css"
 
 const Event = (props) => {
@@ -20,7 +21,7 @@ const Event = (props) => {
   useEffect(() => {
     ;(async () => {
       try {
-        const result = await dates.formatTime(event.time)
+        const result = await dates.formatTime(event.datetime)
         setTime(result)
       } catch (error) {
         throw error

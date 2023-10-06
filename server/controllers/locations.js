@@ -8,3 +8,7 @@ const getLocations = async (req, res) => {
     res.status(409).json({ error: err.message })
   }
 }
+
+export default {
+  getLocations,
+}

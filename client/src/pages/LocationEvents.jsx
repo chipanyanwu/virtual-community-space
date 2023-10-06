@@ -23,16 +23,7 @@ const LocationEvents = ({ index }) => {
 
       <main>
         {events && events.length > 0 ? (
-          events.map((event, index) => (
-            <Event
-              key={event.id}
-              id={event.id}
-              title={event.title}
-              date={event.date}
-              time={event.time}
-              image={event.image}
-            />
-          ))
+          events.map((event, index) => <Event key={event.id} id={event.id} />)
         ) : (
           <h2>
             <i className="fa-regular fa-calendar-xmark fa-shake"></i>{" "}
