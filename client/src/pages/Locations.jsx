@@ -85,7 +85,7 @@ const Locations = () => {
           transform="matrix(0.48 0 0 0.48 0 0)"
         ></image>
 
-        <a href="/echolounge">
+        <a href="/unitedcenter">
           <polygon
             id="venue1"
             points="2.97,234.52 17.94,198.9 34.45,188.58 52.52,191.68 56.65,196.32 69.03,162.26 84,137.48 
@@ -95,7 +95,7 @@ const Locations = () => {
           />
         </a>
 
-        <a href="/houseofblues">
+        <a href="/ryanfield">
           <polygon
             id="venue2"
             name="venue2"
@@ -107,7 +107,7 @@ const Locations = () => {
           />
         </a>
 
-        <a href="/pavilion">
+        <a href="/soldierfield">
           <polygon
             id="venue3"
             name="venue3"
@@ -117,7 +117,7 @@ const Locations = () => {
           />
         </a>
 
-        <a href="/americanairlines">
+        <a href="/chicagotheatre">
           <polygon
             id="venue4"
             name="venue4"

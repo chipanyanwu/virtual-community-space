@@ -16,7 +16,6 @@ const getEventsById = async (req, res) => {
       FROM events
       WHERE id=$1
     `
-
     const eventId = req.params.eventId
 
     const results = await pool.query(selectQuery, [eventId])
@@ -26,7 +25,24 @@ const getEventsById = async (req, res) => {
   }
 }
 
+const getEventsAtLocation = async (req, res) => {
+  try {
+    const selectQuery = `
+      SELECT title, datetime, image
+      FROM events
+      WHERE location=$1
+    `
+    const locationId = req.params.locationId
+
+    const results = await pool.query(selectQuery, [locationId])
+    res.status(200).json(results.rows)
+  } catch (error) {
+    res.status(409).json({ error: error.message })
+  }
+}
+
 export default {
   getEvents,
   getEventsById,
+  getEventsAtLocation,
 }

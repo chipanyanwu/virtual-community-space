@@ -12,19 +12,19 @@ const App = () => {
       element: <Locations />,
     },
     {
-      path: "/echolounge",
+      path: "/unitedcenter",
       element: <LocationEvents index={1} />,
     },
     {
-      path: "/houseofblues",
+      path: "/ryanfield",
       element: <LocationEvents index={2} />,
     },
     {
-      path: "/pavilion",
+      path: "/soldierfield",
       element: <LocationEvents index={3} />,
     },
     {
-      path: "/americanairlines",
+      path: "/chicagotheatre",
       element: <LocationEvents index={4} />,
     },
     {

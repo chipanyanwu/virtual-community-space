@@ -10,7 +10,8 @@ const createLocationsTable = async () => {
     CREATE TABLE IF NOT EXISTS locations (
       id SERIAL PRIMARY KEY,
       venue_name TEXT NOT NULL,
-      venue_address TEXT NOT NULL
+      venue_address TEXT NOT NULL,
+      image TEXT NOT NULL
     )
   `
 
@@ -49,10 +50,15 @@ const seedTables = async () => {
 
   locationsData.forEach((location) => {
     const insertQuery = {
-      text: "INSERT INTO locations (venue_name, venue_address) VALUES ($1, $2)",
+      text: "INSERT INTO locations (id, venue_name, venue_address, image) VALUES ($1, $2, $3, $4)",
     }
 
-    const values = [location.venue_name, location.venue_address]
+    const values = [
+      location.id,
+      location.venue_name,
+      location.venue_address,
+      location.image,
+    ]
 
     pool.query(insertQuery, values, (err, res) => {
       if (err) {
