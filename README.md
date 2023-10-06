@@ -29,12 +29,10 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<!-- <img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
-
-[Video Walkthrough](unitygridplaza_demo.gif)
+<img src='https://i.imgur.com/pfyO848.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <br>
-<img src="https://i.imgur.com/anfF4y3.png" width="720px">
-<img src="https://i.imgur.com/W175Cag.png" width="720px">
+<img src="https://i.imgur.com/anfF4y3.png" width="768px">
+<img src="https://i.imgur.com/W175Cag.png" width="768px">
 
 <!-- Replace this with whatever GIF tool you used! -->
 

@@ -21,11 +21,11 @@ const App = () => {
     },
     {
       path: "/soldierfield",
-      element: <LocationEvents index={3} />,
+      element: <LocationEvents index={4} />,
     },
     {
       path: "/chicagotheatre",
-      element: <LocationEvents index={4} />,
+      element: <LocationEvents index={3} />,
     },
     {
       path: "/events",

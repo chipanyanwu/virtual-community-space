@@ -108,7 +108,7 @@ const Locations = () => {
           />
         </a>
 
-        <a href="/soldierfield">
+        <a href="/chicagotheatre">
           <polygon
             id="venue3"
             name="venue3"
@@ -118,7 +118,7 @@ const Locations = () => {
           />
         </a>
 
-        <a href="/chicagotheatre">
+        <a href="/soldierfield">
           <polygon
             id="venue4"
             name="venue4"
